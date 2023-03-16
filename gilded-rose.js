@@ -10,9 +10,6 @@ class Item {
 }
 
 export class Depreciate extends Item{
-  constructor(name, sellin, quality){
-    super(name, sellin, quality);
-  }
 
   updateQuality(){
     super.updateQuality();
@@ -24,9 +21,6 @@ export class Depreciate extends Item{
 }
 
 export class Appreciate extends Item{
-  constructor(name, sellin, quality){
-    super(name, sellin, quality);
-  }
 
   updateQuality(){
     super.updateQuality();
@@ -45,9 +39,6 @@ export class Appreciate extends Item{
 }
   
 export class Stagnate extends Item{
-  constructor(name, sellin, quality){
-    super(name, sellin, quality);
-  }
 
   updateQuality(){
     // Do nothing
