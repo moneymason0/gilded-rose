@@ -12,8 +12,8 @@ class Item {
 export class Depreciate extends Item{
   constructor(name, sellin, quality){
     super(name, sellin, quality);
-    this.valueType = "Depreciate";
   }
+
   updateQuality(){
     super.updateQuality();
     if (this.quality > 0)
@@ -26,8 +26,8 @@ export class Depreciate extends Item{
 export class Appreciate extends Item{
   constructor(name, sellin, quality){
     super(name, sellin, quality);
-    this.valueType = "Appreciate";
-}
+  }
+
   updateQuality(){
     super.updateQuality();
     if (this.quality < 50) {
@@ -47,8 +47,7 @@ export class Appreciate extends Item{
 export class Stagnate extends Item{
   constructor(name, sellin, quality){
     super(name, sellin, quality);
-    this.valueType = "Stagnate";
-}
+  }
 
   updateQuality(){
     // Do nothing
